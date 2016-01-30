@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+        <script src="../static/javascript/jquery-1.8.3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/lightbox.css">
+        <title>EvaluationUA</title>
+    </head>
+    <body>
+        <div class="content">
+            <div class="wrapper">
+                <div class="content-a">
+                    <div class="content-b">
+                        <div class="header"><h5>Любая квартира бесценна</h5></div>
+                        <div class="block-form">
+                            <div class="first-block-result">
+                                <h7>Цена вашей квартиры :</h7>
+                                <div class="first-block-result-one">{{ posts_cl[0]['cl_price'] }} $</div>
+                            </div>
+                            <div class="second-block-result">
+                                        {% if variant == 1 %}
+                                            Похожая квартира продается в {{ my_data['all_floors'] }}и этажном доме, по адресу {{ my_data['street'] }}, комнат - {{ my_data['room'] }}, площадь - {{ my_data['all_area'] }} и стоит - {{ my_data['price'] }}$
+                                        {% endif %}
+                                        {% if variant == 0 %}
+                                            {{my_data}}
+                                        {% endif %}
+                            </div>
+                            {% if variant == 1 %}
+                            <h9>
+                                Случайные статистики
+                            </h9>
+                            {% endif %}
+                            {% if variant == 0 %}
+                            <div  style="color: #58c6bb;font-size: 25px">C</div>
+                            {% endif %}
+                            <div class="third-block-result">
+                                        {% if variant == 1 %}
+                                         <div class="third-block-result-typical-one">                                        
+                                            <a class="example-image-link" href="{{plotPng1}}" data-lightbox="example-2" data-title="{{my_data['distr']}} район | Гистограмма: {{labels[0]}}"><img class="example-image" src="{{plotPng1}}" alt="image-1" style="width: 145px; height: 98px;"/></a>
+                                        </div>
+                                        <div class="third-block-result-typical-two">
+                                            <a class="example-image-link" href="{{plotPng2}}" data-lightbox="example-2" data-title="{{my_data['distr']}} район | {{labels[2]}} vs. {{labels[1]}}"><img class="example-image" src="{{plotPng2}}" alt="image-1" style="width: 145px; height: 98px;"/></a>
+                                        </div>
+                                        {% endif %}
+                                        {% if variant == 0 %}
+                                          <div class="third-block-result-typical-one">                                        
+                                            <img src="{{plotPng1}}" style="width: 145px; height: 98px;"/>
+                                        </div>
+                                        <div class="third-block-result-typical-two">
+                                            <img src="{{plotPng2}}" style="width: 145px; height: 98px;"/>
+                                        </div>
+                                        {% endif %}
+                            </div>
+                            <div class="fourth-block-result">
+                                <div class="fourth-block-result-first"></div>
+                                <div class="fourth-block-result-middle">
+                                    <a href='index'>
+                                    {{form.button_for_delete_and_return_to_index(type="image", src="../static/img/button-result.png")}}
+                                    </a>
+                                </div>
+                                <div class="fourth-block-result-last"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../static/javascript/lightbox.js"></script>
+        <script>
+            lightbox.option({
+                'resizeDuration': 500,
+            })
+        </script>
+        <div id="socbutton-bar">
+        <ul>
+            <li><a onclick="window.open('http://vk.com/miwolf', 'vkontakte', 'width=626, height=436'); return false;" href="http://vk.com/miwolf" rel="nofollow"><img src="../static/img/vk-logo.png" width="44" height="44" border="0" title="Я во Вконтакте" ></a></li>
+            <li><a onclick="window.open('https://www.facebook.com/niko.iakovliev', 'facebook', 'width=626, height=436'); return false;" rel="nofollow" href="https://www.facebook.com/niko.iakovliev"><img src="../static/img/facebook-logo.png" width="44" height="44" title="Я в Facebook" border="0" ></a></li>
+            <li><a onclick="window.open('https://www.linkedin.com/profile/view?id=340184049', 'mmir', 'width=626, height=436'); return false;" rel="nofollow" href="https://www.linkedin.com/profile/view?id=340184049"><img src="../static/img/in-logo.png" border="0" width="44" height="44" title="Я в LinkedIn" ></a></li>
+        </ul>
+    </div>
+    </body>
+</html>
+
+
+
+

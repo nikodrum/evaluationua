@@ -1,0 +1,365 @@
+/* CSS Document */
+*{
+    padding: 0; margin: 0;
+}
+    html,
+    body {
+        height: auto;
+        background: #85dbd8 url("../img/background-3.png") no-repeat bottom;
+
+    }
+    .footer {
+    bottom : 0;
+    }
+
+    .content {
+        height: 100%;
+        width: 100%;
+        background: url("../img/background-anim2.png") repeat-x;
+        animation: background-anim 1500s linear infinite alternate;
+        -webkit-animation: background-anim 1500s linear infinite alternate;
+        -moz-animation: background-anim 1500s linear infinite alternate;
+        -o-animation: background-anim 1500s linear infinite alternate;
+        -ms-animation: background-anim 1500s linear infinite alternate;
+        min-height: 730px;
+        min-width: 970px;
+        overflow: hidden;
+    }
+    .wrapper {
+        position: relative;
+        min-height: 100%;
+        margin: 0 auto;
+        width: 961px;
+
+    }
+    .content-a {
+        padding-bottom: 913px;
+    }
+    .content-b {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 797px;
+        margin-bottom: 100px;
+        display: block;
+        background: url("../img/background-2.png") no-repeat bottom;
+    }
+    .header {
+        display: block;
+        vertical-align: middle;
+        width: 672px;
+        height: 107px;
+        background: url("../img/header_index.png") no-repeat;
+        margin-top: 6px;
+        margin-left: 191px;
+        margin-right: 98px;
+        text-align: center;
+        color: #f4eb58;
+        overflow: hidden;
+    }
+    .header > h5 {
+        padding-top: 13px;
+        font-size: 53px;
+        font-family: "Segoe UI";
+        text-shadow:  #504e2a 2px -1px 40px;
+        font-weight:100;
+    }
+
+    form > center > h6 {
+        color: #3c4f56;
+        margin-top: 13px;
+        margin-bottom: 10px;
+        vertical-align: middle;
+        font-family: "Segoe UI";
+        font-size: 20px;
+    }
+
+    form {
+        vertical-align: middle;
+        margin-left: 336px;
+        margin-top: 40px;
+        width: 381px;
+    }
+    .block-first {
+        width: 381px;
+        height: 115px;
+        background-color: #3c4f56;
+        border-radius: 15px;
+    }
+    .block-in-first-one {
+        width: 240px;
+        height: 90px;
+        float: left;
+    }
+    .block-in-first-two {
+        width: 90px;
+        height: 90px;
+        float: right;
+    }
+    .block-in-first-one > input[type="text"] {
+        width: 240px;
+        height: 38px;
+        color: #3c4f56;
+        font-family: "Minion Pro";
+        font-size: 25px;
+        font-weight:normal;
+        margin-left: 23px;
+        margin-top: 10px;
+        text-align: left;
+        background-color: #cccccc;
+        vertical-align: middle;
+        display: block;
+    }
+
+    .block-in-first-two > input[type="text"] {
+        width: 90px;
+        height: 90px;
+        color: #3c4f56;
+        font-family: "Minion Pro";
+        font-size: 30px;
+        font-weight:normal;
+        margin-left: -22px;
+        margin-top: 10px;
+        text-align: center;
+        white-space: normal;
+        vertical-align: middle;
+        display: block;
+        background-color: #cccccc;
+    }
+
+    .block-second {
+        width: 381px;
+        height: 115px;
+        background-color: #3c4f56;
+        border-radius: 15px;
+
+    }
+    .block-second > input[type="text"]  {
+        width: 108px;
+        height: 91px;
+        text-align: center;
+        vertical-align: middle;
+        color: #3c4f56;
+        font-family: "Minion Pro";
+        font-size: 20px;
+        font-weight:normal;
+        margin-left: 9px;
+        margin-top: 10px;
+        background-color: #cccccc;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -khtml-border-radius: 3px;
+    }
+    .block-third {
+        margin-top: 50px;
+        width: 381px;
+        height: 115px;
+        float: left;
+    }
+    .block-in-third-typical {
+        width: 63px;
+        height: 114px;
+        background-color: #3c4f56;
+        border-radius: 15px;
+        float: left;
+        margin-right: 40px;
+    }
+    .block-in-third-typical-lastblock {
+        width: 63px;
+        height: 114px;
+        background-color: #3c4f56;
+        border-radius: 15px;
+        float: left;
+    }
+    .block-fourth {
+        margin-top: 40px;
+        width: 381px;
+        height: 115px;
+        float: left;
+    }
+    .block-in-third-typical-middle {
+        width: 167px;
+        height: 114px;
+        background-color: #3c4f56;
+        border-radius: 15px;
+        margin-right: 40px;
+        float: left;
+    }
+    .block-in-third-typical-middle > input[type="image"]{
+        margin-top: 15px;
+        margin-left: 17px;
+    }
+    .block-form{
+        width: 381px;;
+        height: 595px;;
+        margin-left:336px;
+        margin-top:36px;
+        text-align: center;
+    }
+    .first-block-result {
+        width:381px;
+        height:91px;
+        padding-top:24px;
+        color: #dff9db;
+        background-color: #3c4f56;
+        border-radius: 15px;
+        font-family: "Minion Pro";
+        font-size: 25px;
+    }
+    .first-block-result-one{
+        background-color: #acd373;
+        width: 194px;
+        height: 35px;
+        margin-top: 8px;
+        margin-left: 92px;
+        border-radius: 10px;
+        color: #2b7d32;
+        font-size: 32px;
+    }
+    .second-block-result {
+        margin-top:43px;
+        width:301px;
+        height:97px;
+        background-color: #3c4f56;
+        border-radius: 15px;
+        padding-top: 16px;
+        padding-left: 40px;
+        padding-right: 40px;
+        overflow: auto;
+        text-align: center;
+        color: #ddefe4;
+        font-family: "Minion Pro";
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    h9 {
+        font-family: "Minion Pro";
+        font-size: 25px;
+        color: #3c4f56;
+    }
+    .third-block-result {
+        width: 381px;
+        height: 115px;
+        float: left;
+        margin-top: 10px;
+    }
+    .third-block-result-typical-one{
+        width: 145px;
+        height: 97px;
+        padding-left: 11px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-right: 11px;
+        background-color: #3c4f56;
+        margin-right: 46px;
+        float: left;
+        border-radius: 15px;
+    }
+    .third-block-result-typical-two {
+        width: 145px;
+        height: 97px;
+        padding-left: 11px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-right: 11px;
+        background-color: #3c4f56;
+        float: left;
+        border-radius: 15px;
+    }
+    .fourth-block-result {
+        width: 381px;
+        height: 115px;
+        float: left;
+        margin-top: 46px;
+    }
+    .fourth-block-result-first {
+        width: 64px;
+        height: 115px;
+        background-color: #3c4f56;
+        border-radius: 15px;
+        margin-right: 40px;
+        float: left;
+    }
+    .fourth-block-result-middle {
+        width: 136px;
+        height: 85px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 16px;
+        padding-left: 16px;
+        margin-right: 45px;
+        background-color: #3c4f56;
+        border-radius: 15px;
+        float: left;
+    }
+    .fourth-block-result-last {
+        width: 64px;
+        height: 115px;
+        background-color: #3c4f56;
+        border-radius: 15px;
+        float: left;
+    }
+    #socbutton-bar{
+        position:fixed;
+        display: block;
+        top: 36%;
+        left: 5px;
+        padding:0px;
+        margin:0px;
+        width:50px;
+        height:270px;
+        float:left;
+    }
+    #socbutton-bar ul {
+        margin:0;
+        padding:0;
+        list-style:none;
+        line-height:14px;
+    }
+    #socbutton-bar li a {opacity: 0.7;}
+    #socbutton-bar li a:hover  {opacity: 1;}
+
+/* Animation*/
+@keyframes background-anim {
+    from { background-position-x: 0px;
+        background-position: 0px 0px;}
+    to {  background-position-x: 50000px;
+        background-position: 50000px 0px;}
+}
+@-webkit-keyframes background-anim {
+    from { background-position-x: 0px;}
+    to {  background-position-x: 50000px;}
+}
+@-moz-keyframes background-anim {
+    from { background-position-x: 0px;
+        background-position: 0px 0px;}
+    to {  background-position-x: 50000px;
+        background-position: 50000px 0px;}
+}
+@-o-keyframes background-anim {
+    from { background-position-x: 0px;}
+    to {  background-position-x: 50000px;}
+}
+@-ms-keyframes background-anim {
+    from { background-position-x: 0px;
+        background-position: 0px 0px;}
+    to {  background-position-x: 50000px;
+        background-position: 50000px 0px;}
+}
+
+.form_hint {
+    background: #d45252;
+    border-radius: 3px 3px 3px 3px;
+    color: white;
+    margin-left:8px;
+    padding: 1px 6px;
+    z-index: 999; /* hints stay above all other elements */
+    position: absolute; /* allows proper formatting if hint is two lines */
+    display: none;
+    font-size: 20px
+}
+.block-in-first-one input:focus + .form_hint {display: inline;}
+.block-second input:focus + .form_hint {display: inline;}
+.block-in-first-two input:focus + .form_hint {display: inline;}
